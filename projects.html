@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Ilisha Dabas</title>
+  <link rel="icon" href="assets/img/logo-star.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Pixelify+Sans&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="projects">
+
+  <!-- Figma frame "Projects" (1680 × 4716) -->
+  <main class="frame projects">
+    <header data-site-header></header>
+
+    <h1 class="abs projects__title">Making to explore ....</h1>
+    <p class="abs projects__intro">Not everything starts with a brief. Some things start with curiosity, a question, or an idea I just had to try. ദ്ദി(•̀ ᴗ -)</p>
+
+    <!-- window tiles are added here from js/projects-data.js -->
+    <div id="board"></div>
+
+    <!-- "Currently into" sticky note -->
+    <aside class="abs note">
+      <h2 class="note__title">Currently into ...</h2>
+      <div class="note__text">
+        <p>Currently, I’m exploring the space between design and technology experimenting with AI, creative coding, 3D, and physical computing. I’m fascinated by how things work, why people interact with them the way they do, and how small observations can turn into meaningful ideas. Lately, I’ve been especially interested in the process of taking something from a rough concept to a working prototype, whether that means building digital experiences, tinkering with robotics, exploring new tools, or experimenting with interactions that feel a little different.</p>
+        <p>I enjoy stepping outside what I already know, picking up unfamiliar tools, and figuring things out as I go. For me, curiosity is often the starting point, and making is how I learn. Not everything needs to become a polished project or have a brief behind it; sometimes, I just want to see what’s possible, try something unexpected, and discover something I wouldn’t have otherwise.</p>
+      </div>
+      <img class="note__letter" src="assets/img/love-letter.png" alt="">
+    </aside>
+
+    <!-- ===== DESK (matches the reference screenshot) ===== -->
+    <!-- Sticker box: drag a sticker out to drop a COPY anywhere on the page.
+         Drag placed stickers to move them, double-click to remove one,
+         RESET clears them all. Positions are Figma px inside the 412 × 379 box. -->
+    <div class="abs desk-box" id="stickers">
+      <img class="sticker" src="assets/img/sparkle.png"    alt="sparkle sticker"    style="left:calc(12/412*100%);  top:calc(11/379*100%);  width:calc(93/412*100%);  height:calc(93/379*100%)">
+      <img class="sticker" src="assets/img/coffee.png"     alt="coffee sticker"     style="left:calc(102/412*100%); top:calc(11/379*100%);  width:calc(104/412*100%); height:calc(104/379*100%)">
+      <img class="sticker" src="assets/img/mouse.png"      alt="hamster sticker"    style="left:calc(206/412*100%); top:calc(19/379*100%);  width:calc(85/412*100%);  height:calc(85/379*100%)">
+      <img class="sticker" src="assets/img/cd.png"         alt="cd sticker"         style="left:calc(311/412*100%); top:calc(26/379*100%);  width:calc(71/412*100%);  height:calc(74/379*100%)">
+      <img class="sticker" src="assets/img/pokemon.png"    alt="ghost sticker"      style="left:calc(0/412*100%);   top:calc(131/379*100%); width:calc(117/412*100%); height:calc(117/379*100%)">
+      <img class="sticker" src="assets/img/bottle.png"     alt="bottle sticker"     style="left:calc(115/412*100%); top:calc(148/379*100%); width:calc(78/412*100%);  height:calc(78/379*100%)">
+      <img class="sticker" src="assets/img/plane.png"      alt="paper plane sticker" style="left:calc(206/412*100%); top:calc(141/379*100%); width:calc(85/412*100%);  height:calc(85/379*100%)">
+      <img class="sticker" src="assets/img/flower.png"     alt="tulips sticker"     style="left:calc(273/412*100%); top:calc(120/379*100%); width:calc(139/412*100%); height:calc(139/379*100%)">
+      <img class="sticker" src="assets/img/strawberry.png" alt="strawberry sticker" style="left:calc(6/412*100%);   top:calc(259/379*100%); width:calc(105/412*100%); height:calc(105/379*100%)">
+      <img class="sticker" src="assets/img/bow.png"        alt="bow sticker"        style="left:calc(115/412*100%); top:calc(264/379*100%); width:calc(78/412*100%);  height:calc(102/379*100%)">
+      <img class="sticker" src="assets/img/leaf.png"       alt="clover sticker"     style="left:calc(213/412*100%); top:calc(271/379*100%); width:calc(81/412*100%);  height:calc(81/379*100%)">
+      <button class="desk-reset" id="reset-stickers" style="position:absolute; left:calc(322/412*100%); top:calc(302/379*100%)">RESET</button>
+    </div>
+
+    <!-- to-do notebook: one sheet, rotated as a whole -->
+    <div class="abs notebook">
+      <h3 class="notebook__head">to do (¬`‸´¬)</h3>
+      <ul class="notebook__list">
+        <li><label><input type="checkbox"><span>finish redesigning my portfolio (for real this time)</span></label></li>
+        <li><label><input type="checkbox"><span>turn the 37 tabs open in my browser into <br>something useful</span></label></li>
+        <li><label><input type="checkbox"><span>stop changing the font every 20 minutes</span></label></li>
+        <li><label><input type="checkbox"><span>finally finish all the side projects I started at 2 am</span></label></li>
+      </ul>
+    </div>
+    <img class="abs notebook-bow" src="assets/img/bow.png" alt="">
+    <img class="abs notebook-cup" src="assets/img/coffee.png" alt="">
+
+    <p class="abs fueled">FUELED BY CAFFEINE ( ◡̀_◡́)ᕤ</p>
+  </main>
+
+  <div id="popups"></div>
+  <nav data-dock></nav>
+
+  <script src="js/projects-data.js"></script>
+  <script>
+    // ---- build window tiles + popups from PROJECTS ----
+    (function () {
+      const board = document.getElementById("board");
+      const popups = document.getElementById("popups");
+      const slug = (s) => "p-" + s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+      const img = (file, alt, cls = "") => `<img${cls ? ` class="${cls}"` : ""} src="assets/img/${file}" alt="${esc(alt)}" loading="lazy">`;
+      const made = new Set();
+      // one slide: a picture, or a video (plays to the end). The blurred copy behind
+      // fills the frame so every shape of image fits without cropping.
+      const abs = (u) => new URL(u, location.href).href;   // url() in a CSS variable needs a full address
+      const slide = (path, alt) => {
+        const src = "assets/" + path;
+        if (/\.mp4$/.test(path)) {
+          const b = src.replace(/\.mp4$/, "");
+          return `<figure class="slide" style="--bg:url('${abs(b + ".jpg")}')"><video muted playsinline preload="none" poster="${b}.jpg"><source src="${b}.webm" type="video/webm"><source src="${b}.mp4" type="video/mp4"></video></figure>`;
+        }
+        return `<figure class="slide" style="--bg:url('${abs(src)}')"><img src="${src}" alt="${esc(alt)}" loading="lazy"></figure>`;
+      };
+      // offer WebM first, MP4 as the fallback (every browser plays one of them)
+      const sources = (file) => { const b = "assets/video/" + file.replace(/\.mp4$/, ""); return `<source src="${b}.webm" type="video/webm"><source src="${b}.mp4" type="video/mp4">`; };
+
+      PROJECTS.forEach((p) => {
+        const id = p.opens ? slug(p.opens) : p.id ? "p-" + p.id : slug(p.title);
+        const fit = p.fit === "contain" ? " tile__img--contain" : "";
+
+        // ---- tile ----
+        let media;
+        if (p.slides) media = `<div class="tile__media slideshow" data-slideshow>${p.slides.map((f) => slide(f, p.title)).join("")}</div>`;
+        else if (p.image) media = `<div class="tile__media">${img(p.image, p.title, "tile__img" + fit)}${p.video ? `<video muted loop playsinline autoplay preload="auto" data-autoplay aria-hidden="true">${sources(p.video)}</video>` : ""}</div>`;
+        else media = `<div class="tile__empty"></div>`;
+
+        const tile = document.createElement("button");
+        tile.className = "tile reveal";
+        tile.dataset.open = id;
+        tile.style.cssText = `left:${p.x}px; top:${p.y}px; width:${p.w}px; height:${p.h}px`;
+        tile.innerHTML = `<div class="tile__bar"><span>${esc(p.title)}</span></div>${media}`;
+        board.appendChild(tile);
+
+        // ---- popup ----
+        if (p.opens || made.has(id)) return;
+        made.add(id);
+        const name = p.popup || p.title;
+        const paras = (p.text || "").split(/\n\n/).filter(Boolean).map((t) => `<p>${esc(t)}</p>`).join("");
+        const ext = (h) => /^https?:|\.pdf$/i.test(h) ? ' target="_blank" rel="noopener"' : "";
+        const list = (p.links || []).concat(p.link ? [{ label: "View project", href: p.link }] : []);
+        const link = list.length ? `<div class="pp-links">${list.map((l, k) => `<a class="pp-link${k ? " pp-link--alt" : ""}" href="${l.href}"${ext(l.href)}>${esc(l.label)} →</a>`).join("")}</div>` : "";
+        let pMedia = "";
+        if (p.slides) pMedia = `<div class="pp-slides slideshow" data-slideshow>${p.slides.map((f) => slide(f, name)).join("")}</div>`;
+        else if (p.video) pMedia = `<div class="vid">${img(p.image, name)}<video muted loop playsinline preload="metadata">${sources(p.video)}</video></div>`;
+        else if (p.image) pMedia = img(p.image, name);
+        popups.insertAdjacentHTML("beforeend", `
+          <dialog class="window window--narrow" id="${id}" aria-label="${esc(name)}">
+            <div class="window__bar">
+              <div class="window__dots"><button class="window__close" aria-label="Close"></button><span></span><span></span></div>
+              <div class="window__title">${esc(name)}</div>
+            </div>
+            <div class="window__body window__body--project">
+              <div class="pp-media">${pMedia}</div>
+              <div class="pp-text"><h2>${esc(name)}</h2>${paras}${link}</div>
+            </div>
+          </dialog>`);
+      });
+    })();
+  </script>
+  <script src="js/site.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/stickers.js"></script>
+</body>
+</html>

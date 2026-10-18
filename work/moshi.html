@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moshi — Ilisha Dabas</title>
+  <link rel="icon" href="../assets/img/logo-star.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Pixelify+Sans&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="case-page" data-page="works" data-case="moshi" data-root="../">
+  <div class="progress"></div>
+  <!-- BACK stays pinned in place (Figma x130, y370) while the page scrolls -->
+  <a class="case-back" href="../index.html#works" data-back>BACK</a>
+
+  <div class="frame case-frame">
+    <header data-site-header data-minimal></header>
+
+  <main class="case">
+
+    <div class="case__hero vid">
+      <img src="../assets/img/moshi-work.png" alt="Moshi cover" width="681" height="382">
+      <video muted loop playsinline preload="auto" data-autoplay aria-hidden="true"><source src="../assets/video/moshi.webm" type="video/webm"><source src="../assets/video/moshi.mp4" type="video/mp4"></video>
+    </div>
+    <a class="case__link" href="../assets/pdf/moshi.pdf" target="_blank" rel="noopener">Project Link</a>
+    <p class="case__eyebrow">ROBOTICS × PRODUCT DESIGN</p>
+    <h1 class="case__title">Moshi</h1>
+    <p class="case__sub">Designing a small robot around movement, interaction, and personality.</p>
+    <div class="tags">
+      <span class="tag" style="--dot-color:#f2a52b">robotic design</span>
+      <span class="tag tag--plain">product design</span>
+      <span class="tag tag--plain">hardware</span>
+      <span class="tag tag--plain">interaction</span>
+    </div>
+
+    <section class="reveal">
+      <p class="case__label case__label--tldr">TL;DR</p>
+      <p>Moshi is a small robotic companion built around physical movement and interaction.</p>
+      <p>The project brought together <b>industrial design, electronics, interaction, fabrication, and embedded systems</b>, turning a technical robotics problem into a physical product with a recognizable character.</p>
+      <p>My work focused on the product form, physical design, interaction thinking, and prototyping.</p>
+    </section>
+
+    <section class="reveal">
+      <p class="case__label">Background</p>
+      <h2>Robots don't just need to work. They need to communicate.</h2>
+      <p>A robot can technically perform an action without making the interaction understandable.</p>
+      <p>For Moshi, the challenge was to think about the robot not simply as a collection of electronics, motors, and code, but as something a person could <b>read, understand, and interact with.</b></p>
+    </section>
+
+    <section class="reveal">
+      <p class="case__label">Problem</p>
+      <h2>How do you give hardware a personality without compromising its function?</h2>
+      <p>The form had to accommodate electronics, movement, structural requirements, and fabrication constraints.</p>
+      <p>At the same time, it needed to feel approachable rather than purely mechanical.</p>
+      <div class="notif reveal"><div><b>Our North Star</b>How might we turn a functional robotic system into something people can intuitively understand?</div></div>
+    </section>
+
+    <section class="reveal">
+      <p class="case__label">Process</p>
+      <h2>Designing Moshi</h2>
+      <ol class="steps">
+        <li>
+          <strong>Designing around the hardware</strong>
+          <p>The physical form had to work with the electronics rather than treating the enclosure as something added at the end.</p>
+          <p>ESP32, Wi-Fi, OLED, motors, wiring, and structural components all became constraints in the design.</p>
+        </li>
+        <li>
+          <strong>Form follows movement</strong>
+          <p>Because Moshi is a moving robot, its proportions and geometry were considered alongside the way its body moves.</p>
+          <p>The design therefore became a balance between:</p>
+          <p class="flow">Structure → Movement → Electronics → Character</p>
+        </li>
+        <li>
+          <strong>Prototyping the physical form</strong>
+          <p>Digital models were translated into physical prototypes through 3D printing.</p>
+          <p>This made it possible to evaluate proportions, assembly, clearances, and the relationship between individual components.</p>
+        </li>
+      </ol>
+      <!-- Process photos: add moshi-1-1.png … moshi-1-6.png to assets/img -->
+      <div class="gallery" style="grid-template-columns: 283fr 206fr 223fr">
+        <figure><img src="../assets/img/moshi-1-1.png" alt="Moshi CAD model" width="283" height="383" loading="lazy"></figure>
+        <figure><img src="../assets/img/moshi-1-3.png" alt="Moshi prototype" width="206" height="383" loading="lazy"></figure>
+        <figure><img src="../assets/img/moshi-1-4.png" alt="Moshi prototype" width="223" height="383" loading="lazy"></figure>
+        <figure><img src="../assets/img/moshi-1-2.png" alt="Moshi parts" width="293" height="133" loading="lazy"></figure>
+        <figure><img src="../assets/img/moshi-1-5.png" alt="Moshi electronics" width="201" height="199" loading="lazy"></figure>
+        <figure><img src="../assets/img/moshi-1-6.png" alt="Moshi assembly" width="223" height="202" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <p class="case__label">Final Product</p>
+      <h2>Moshi</h2>
+      <p class="lead">01&nbsp;&nbsp;The body</p>
+      <p>A compact enclosure designed around the internal electronics and mechanical system.</p>
+      <p>&nbsp;</p>
+      <p class="lead">02&nbsp;&nbsp;The face / display</p>
+      <p>The OLED display gives Moshi a simple visual channel for communicating state and interaction.</p>
+      <p>&nbsp;</p>
+      <p class="lead">03&nbsp;&nbsp;Movement</p>
+      <p>The mechanical system allows Moshi to physically respond rather than relying entirely on a screen-based interface.</p>
+      <p>&nbsp;</p>
+      <p class="lead">04&nbsp;&nbsp;Prototype</p>
+      <p>The final physical prototype brought together the CAD, electronics, fabrication, and interaction system.</p>
+      <figure>
+        <img src="../assets/img/moshi-2.png" alt="Moshi final prototype" width="741" height="402" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="reveal">
+      <p class="case__label">Reflections</p>
+      <h2>Physical interfaces have constraints digital interfaces don't.</h2>
+      <p>A screen can change instantly. A physical product has weight, tolerances, assembly, material, and mechanical limitations.</p>
+      <p>Moshi made those constraints part of the design process rather than something to solve afterwards.</p>
+      <figure style="max-width:613px; margin-inline:auto">
+        <img src="../assets/img/moshi-3.png" alt="Moshi" width="613" height="613" loading="lazy">
+      </figure>
+    </section>
+  </main>
+  </div>
+
+  <script src="../js/site.js"></script>
+  <script src="../js/music.js"></script>
+  <script src="../js/media.js"></script>
+</body>
+</html>

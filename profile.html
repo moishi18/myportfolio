@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile — Ilisha Dabas</title>
+  <link rel="icon" href="assets/img/logo-star.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Pixelify+Sans&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="profile">
+
+  <!-- Figma frame "Profile" (1680 × 972) -->
+  <main class="frame profile">
+    <header data-site-header></header>
+
+    <img class="abs sparkle profile__sparkle-a" src="assets/img/sparkle.png" alt="">
+    <img class="abs profile__chibi" src="assets/img/chibi-profile.png" alt="Pixel-art Ilisha holding an iced coffee" width="262" height="587">
+    <img class="abs sparkle profile__sparkle-b" src="assets/img/sparkle.png" alt="">
+
+    <h1 class="abs profile__title">About me</h1>
+    <div class="abs profile__bio">
+      <p>I’m Ilisha, a product designer, builder, and occasional overthinker.</p>
+      <p>I study Design at DTU and work across products, interfaces, brands, and technology. Along the way, I’ve worked with startups, led design teams, worked with clients, and taken ideas from a rough sketch to something people can actually use.</p>
+      <p>I also spend a lot of time outside the usual design bubble, working with Team Inferno, exploring robotics and physical computing, experimenting with AI and 3D, and generally finding excuses to build things.</p>
+      <p>I care about making things clear, useful, and a little unexpected, but I’m just as interested in everything that happens before the final screen: asking better questions, figuring out the messy bits, and getting people moving in the same direction.</p>
+    </div>
+
+    <!-- each folder opens the popup with the matching id -->
+    <div class="profile__folders">
+      <button class="abs folder folder--experience" data-open="experience"><img src="assets/img/no-file.png" alt=""><span>EXPERIENCE</span></button>
+      <button class="abs folder folder--skills" data-open="skills"><img src="assets/img/no-file.png" alt=""><span>SKILLS</span></button>
+      <button class="abs folder folder--achievements" data-open="achievements"><img src="assets/img/no-file.png" alt=""><span>ACHIEVEMENTS</span></button>
+    </div>
+  </main>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <dialog class="window" id="experience" aria-label="Experience">
+    <div class="window__bar">
+      <div class="window__dots"><button class="window__close" aria-label="Close"></button><span></span><span></span></div>
+      <div class="window__title">Experience</div>
+    </div>
+    <div class="window__body">
+      <img class="window__art" src="assets/img/pop-experience.png" alt="Pixel-art desk scene" width="424" height="424">
+      <div class="exp">
+        <h3>Founder &amp; Product Designer, NaviBites</h3>
+        <ul>
+          <li>Designed an AI-powered food discovery app end-to-end, translating user research and feedback into onboarding, personalised recommendations, and community-driven discovery experiences.</li>
+          <li>Built a scalable Figma design system with reusable components, interaction states, and design tokens to support consistent developer handoff.</li>
+        </ul>
+        <h3>Head Designer, Dolu</h3>
+        <ul>
+          <li>Led product design across 30+ screens spanning the app, website, and WhatsApp ordering flow for recurring milk subscriptions, delivery management, and wallet payments.</li>
+          <li>Researched users across 3 age groups to simplify ordering through conversational interactions, voice navigation, and reduced task complexity.</li>
+        </ul>
+        <h3>Design &amp; Research Lead (Team Manager), Team Inferno - DTU Mars Rover Team</h3>
+        <ul>
+          <li>Led design and research within a 40+ member multidisciplinary team spanning mechanical, electrical, software, and management; designed an operator-monitoring portal integrating 4 live camera feeds.</li>
+          <li>Earned 1st place in Project Implementation &amp; Management at IRC 2025 and the highest Business &amp; Partnership Plan score at IRC 2026; ranked 19th worldwide and qualified for ERC Remote 2025.</li>
+        </ul>
+        <h3>Visual Identity &amp; Website UI/UX Designer, SEVA FIRST (Delhi-NCR Ministry)</h3>
+        <ul>
+          <li>Designed the complete visual identity and competition website, including the logo, 20+ website pages, promotional flyer, and event backdrop for a competition attracting 9,000+ registrations.</li>
+          <li>Contributed to competition planning through budgeting, task structuring, and evaluation-criteria development.</li>
+        </ul>
+        <h3>Design Intern, Agnirva (ISRO Initiation)</h3>
+        <ul>
+          <li>Shaped Space Education for Bharat, a space-education product for Class 8–12 learners, across 6 deliverables: requirements, research, quality criteria, product spec, communications and localization.</li>
+          <li>Landed on source-backed learning modules, teacher quick-use guides, bilingual support and low-bandwidth formats for rural and regional-language schools.</li>
+        </ul>
+        <h3>Brand Identity &amp; Digital Design Intern, Technical Craftsmen (Saudi Arabia)</h3>
+        <ul>
+          <li>Developed 2 complete brand identities, including logos, typography, colour systems, and brand guidelines, applied across websites and digital assets.</li>
+          <li>Created cohesive visual systems for international clients across branding and digital touchpoints.</li>
+        </ul>
+        <h3>Lead Product Designer, Panha NGO | Freelance UX Designer</h3>
+        <ul>
+          <li>Led end-to-end digital product design from concept to developer handoff, translating user and business needs into intuitive product experiences.</li>
+          <li>Delivered UI/UX and branding projects for 10+ startup and international clients across websites, digital products, and visual identities.</li>
+        </ul>
+        <h3>Council Member, Institution’s Innovation Council (IIC), DTU</h3>
+        <ul>
+          <li>Collaborated with DTU’s R&amp;D Department and Incubation Cell on innovation, entrepreneurship, and startup ecosystem initiatives.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ================= SKILLS ================= -->
+  <dialog class="window" id="skills" aria-label="Skills">
+    <div class="window__bar">
+      <div class="window__dots"><button class="window__close" aria-label="Close"></button><span></span><span></span></div>
+      <div class="window__title">Skills</div>
+    </div>
+    <div class="window__body">
+      <img class="window__art" src="assets/img/pop-skills-crop.png" alt="Pixel-art designer at her desk" width="469" height="350">
+      <dl class="skills">
+        <dt>Product &amp; UX Design:</dt>
+        <dd>Product Design, UI/UX Design, User Research, Interaction Design, Information Architecture, Wireframing, Prototyping, Usability Testing, Design Systems</dd>
+        <dt>Visual &amp; Brand Design:</dt>
+        <dd>Visual Identity, Branding, Typography, Layout Design, Digital Design, Motion Graphics, Marketing Collateral</dd>
+        <dt>AI &amp; Product Development Tools:</dt>
+        <dd>ChatGPT, Claude, Google Gemini, Lovable, Google Stitch, Cursor, Figma AI; AI-Assisted Design, Rapid Prototyping, AI-Powered Workflows</dd>
+        <dt>Design &amp; Engineering Tools:</dt>
+        <dd>Figma, Framer, Adobe Illustrator, Photoshop, After Effects, Premiere Pro, DaVinci Resolve, Blender, Fusion 360, SolidWorks</dd>
+        <dt>Manufacturing &amp; Fabrication:</dt>
+        <dd>Welding, Spot Welding, Soldering, Grinding, Lathe Operations, Laser Cutting, CNC Machine Operation, 3D Printing, Mechanical Fabrication</dd>
+        <dt>Technical Skills:</dt>
+        <dd>HTML/CSS, CAD Modelling, 3D Modelling, Simulation, Developer Handoff</dd>
+        <dt>Leadership &amp; Strategy:</dt>
+        <dd>Design Leadership, Cross-functional Collaboration, Product Strategy, Project Management, Startup Operations</dd>
+      </dl>
+    </div>
+  </dialog>
+
+  <!-- ================= ACHIEVEMENTS ================= -->
+  <dialog class="window" id="achievements" aria-label="Achievements">
+    <div class="window__bar">
+      <div class="window__dots"><button class="window__close" aria-label="Close"></button><span></span><span></span></div>
+      <div class="window__title">Achievements</div>
+    </div>
+    <div class="window__body">
+      <img class="window__art" src="assets/img/pop-achievements-crop.png" alt="Pixel-art Ilisha with a trophy and medal" width="395" height="736" style="max-width:300px">
+      <div class="awards">
+        <article class="award">
+          <span class="award__num">01</span>
+          <h3>ISDC 2025</h3>
+          <p>World Rank 7 · Team Inferno, DTU</p>
+          <small>(International Space Drone Challenge)</small>
+        </article>
+        <article class="award">
+          <span class="award__num">02</span>
+          <h3>IRC 2025</h3>
+          <p>World Rank 12 · 1st Place, Project Implementation &amp; Management</p>
+          <small>(International Rover Challenge)</small>
+        </article>
+        <article class="award">
+          <span class="award__num">03</span>
+          <h3>IRC 2026</h3>
+          <p>World Rank 19 · Highest Score in Business &amp; Partnership Plan</p>
+          <small>(International Rover Challenge)</small>
+        </article>
+        <article class="award">
+          <span class="award__num">04</span>
+          <h3>ERC Remote 2025</h3>
+          <p>Among the few Indian teams to qualify</p>
+          <small>(European Rover Challenge)</small>
+        </article>
+        <article class="award award--wide">
+          <span class="award__num">05</span>
+          <h3>SEVA FIRST</h3>
+          <p>Designed the visual identity and competition website for an event with 9,000+ registrations, under Delhi NCR Ministry</p>
+          <small>(<a href="https://sewafirstryic.dtu.ac.in/" target="_blank" rel="noopener">Official Website with mention</a>)</small>
+        </article>
+      </div>
+    </div>
+  </dialog>
+
+  <nav data-dock></nav>
+  <script src="js/site.js"></script>
+  <script src="js/music.js"></script>
+</body>
+</html>
