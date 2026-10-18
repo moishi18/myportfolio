@@ -1,18 +1,5 @@
 # Ilisha Dabas — Portfolio
 
-Plain HTML, CSS and JavaScript. No build step, no install. Open `index.html`.
-(For live-reload while editing in VS Code: **Live Server** extension → *Open with Live Server*.)
-
-## Pages (same flow as cindyly.design)
-
-| Page | What's on it | Reached by |
-|---|---|---|
-| `index.html` | Landing, then scroll down into **Works** (the 8 case-study cards) | logo, dock → works |
-| `projects.html` | "Making to explore" board, sticky note, sticker desk, to-do | dock → projects |
-| `profile.html` | About me + Experience / Skills / Achievements popups | dock → profile |
-| `work/*.html` | the 8 case studies | clicking a Works card; BACK returns to Works |
-
-`work.html` just redirects to the Works section.
 
 ## Layout = your Figma, exactly
 
