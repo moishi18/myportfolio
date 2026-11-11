@@ -104,7 +104,7 @@ const PROJECTS = [
   {
     title: "SEVA FIRST", image: "proj-seva-first.png",
     slides: ["img/proj-seva-first.png", "slides/seva-01.jpg", "slides/seva-02.jpg", "slides/seva-03.jpg", "slides/seva-04.jpg", "slides/seva-05.jpg", "slides/seva-v1.mp4"], x: 633, y: 3257, w: 412, h: 343,
-    text: "SEVA First is a Delhi-NCR social impact challenge that drew 9,000+ registrations. I designed its whole identity and digital presence.\n\nI made the logo, flyers and on-site backdrop, and did the UI/UX for the 20+ page competition website, which went live during the event. Beyond design, I helped structure tasks, evaluation criteria and the budget for the December 2026 edition. Ashish Banerjee, Technology Evangelist, recommended me on LinkedIn for this work.",
+    text: "SEVA First is a Delhi-NCR social impact challenge that drew 13,000+ registrations. I designed its whole identity and digital presence.\n\nI made the logo, flyers and on-site backdrop, and did the UI/UX for the 20+ page competition website, which went live during the event. Beyond design, I helped structure tasks, evaluation criteria and the budget for the December 2026 edition. Ashish Banerjee, Technology Evangelist, recommended me on LinkedIn for this work.",
     links: [{ label: "click here to view more", href: "https://sewafirstryic.dtu.ac.in/" }],
   },
   {
