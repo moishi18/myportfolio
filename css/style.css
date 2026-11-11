@@ -161,7 +161,7 @@ p { margin: 0; }
 /* ---------------------------------------------------------
    LANDING (Figma frame "landing" 1680×972)
    --------------------------------------------------------- */
-.landing { --fh: 972px; }
+.landing { --fh: 900px; }  /* Figma 972; trimmed so Works starts closer */
 .landing__player { left: 657px; top: 68px; width: 548px; transform-style: preserve-3d; transition: transform 0.2s ease-out; }
 .landing__player img { width: 548px; height: 725px; animation: float 6s ease-in-out infinite; }
 .landing__eyebrow { left: 191px; top: 318px; font-size: 20px; font-weight: 300; }
@@ -173,12 +173,13 @@ p { margin: 0; }
 .landing__note { left: 1153px; top: 456px; font-size: 15px; font-weight: 300; white-space: nowrap; }
 
 /* ---------------------------------------------------------
-   WORKS (Figma frames "Work - 1/2/3": tabs at 531,161 ·
-   cards 629×463 at x200 / 851, rows at y294 / 794)
+   WORKS (Figma frames "Work - 1/2/3": tabs at x531 · cards 629×463
+   at x200 / 851, 133px below the tabs, rows 500px apart. Moved up
+   110px from Figma so Works sits closer to the landing)
    --------------------------------------------------------- */
-.works { --rows: 2; --fh: calc(294px + var(--rows) * 500px); }
+.works { --rows: 2; --fh: calc(184px + var(--rows) * 500px); }
 .seg {
-  left: 531px; top: 161px; width: 618px; height: 40px;
+  left: 531px; top: 51px; width: 618px; height: 40px;
   display: grid; grid-template-columns: repeat(3, 1fr);
   padding: 0; border-radius: 9px; background: #efeff0;
 }
@@ -193,7 +194,7 @@ p { margin: 0; }
 .seg__btn[aria-selected="true"]::before, .seg__btn[aria-selected="true"] + .seg__btn::before { display: none; }
 .seg__btn:not([aria-selected="true"]):hover { background: #e3e2ea; }
 .work-grid {
-  position: absolute; left: 200px; top: 294px; width: 1280px;
+  position: absolute; left: 200px; top: 184px; width: 1280px;
   display: grid; grid-template-columns: 629px 629px; gap: 37px 22px;
 }
 .card[hidden] { display: none; }
@@ -228,7 +229,7 @@ p { margin: 0; }
 /* ---------------------------------------------------------
    ABOUT ME (Figma frame "Profile 2" 1680×1140, on the homepage)
    --------------------------------------------------------- */
-.about { --fh: 1140px; }
+.about { --fh: 1220px; }
 .about__chibi { left: 263px; top: 168px; width: 258px; height: 579px; object-fit: cover; animation: float 5s ease-in-out infinite; }
 .sparkle { width: 98px; height: 98px; filter: drop-shadow(0 4px 7px rgba(0, 0, 0, 0.25)); animation: twinkle 2.8s ease-in-out infinite; }
 .about__sparkle-a { left: 135px; top: 164px; }
@@ -247,7 +248,7 @@ p { margin: 0; }
 
 /* trophy shelf */
 .trophy {
-  left: 222px; top: 798px; width: 1236px;
+  left: 222px; top: 738px; width: 1236px;
   display: flex; flex-direction: column; gap: 14px; padding: 22px 28px;
   background: #fff; border: 1.5px solid #e4e1f7; border-radius: 20px; box-shadow: 0 3px 0 #e4e1f7;
 }
@@ -262,7 +263,7 @@ p { margin: 0; }
 .stat strong small { font-size: 9px; }
 .stat span { font-size: 12px; color: #5f5f66; }
 .stat a { text-decoration: underline; }
-.about__fueled { left: 75px; top: 1080px; font-size: 16px; color: var(--muted); white-space: nowrap; }
+.about__fueled { left: 75px; top: 1160px; font-size: 16px; color: var(--muted); white-space: nowrap; }
 @keyframes twinkle { 50% { transform: scale(0.9) rotate(8deg); } }
 
 /* ---------------------------------------------------------
