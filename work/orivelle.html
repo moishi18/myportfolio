@@ -7,106 +7,111 @@
   <link rel="icon" href="../assets/img/logo-star.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Pixelify+Sans&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="case-page" data-page="works" data-case="orivelle" data-root="../">
+<body class="case-page" style="--case-bg:#ffffff" data-page="works" data-case="orivelle" data-root="../">
   <div class="progress"></div>
-  <!-- BACK stays pinned in place (Figma x130, y370) while the page scrolls -->
+  <!-- BACK stays pinned in place (Figma x58, y374) while the page scrolls -->
   <a class="case-back" href="../index.html#works" data-back>BACK</a>
 
-  <div class="frame case-frame">
-    <header data-site-header data-minimal></header>
+  <!-- Figma frame "Orivelle 2" (1680 × 11273). The design itself is the image
+       slices in assets/case/orivelle/ — re-export them from Figma to change it.
+       Live parts sit on top at their Figma x/y. -->
+  <div class="frame case-head"><header data-site-header data-minimal></header></div>
+  <div class="frame case-board" style="--fh:11273px">
+    <div class="case-board__img">
+      <img src="../assets/case/orivelle/01.webp" alt="" width="1680" height="1200" decoding="async">
+      <img src="../assets/case/orivelle/02.webp" alt="" width="1680" height="1200" decoding="async">
+      <img src="../assets/case/orivelle/03.webp" alt="" width="1680" height="1200" loading="lazy" decoding="async">
+      <img src="../assets/case/orivelle/04.webp" alt="" width="1680" height="1200" loading="lazy" decoding="async">
+      <img src="../assets/case/orivelle/05.webp" alt="" width="1680" height="1200" loading="lazy" decoding="async">
+      <img src="../assets/case/orivelle/06.webp" alt="" width="1680" height="1200" loading="lazy" decoding="async">
+      <img src="../assets/case/orivelle/07.webp" alt="" width="1680" height="1200" loading="lazy" decoding="async">
+      <img src="../assets/case/orivelle/08.webp" alt="" width="1680" height="1200" loading="lazy" decoding="async">
+      <img src="../assets/case/orivelle/09.webp" alt="" width="1680" height="1200" loading="lazy" decoding="async">
+      <img src="../assets/case/orivelle/10.webp" alt="" width="1680" height="473" loading="lazy" decoding="async">
+    </div>
 
-  <main class="case">
-
-    <div class="case__hero vid">
-      <img src="../assets/img/orivelle-work.jpg" alt="Orivelle cover" width="681" height="382">
+    <!-- hero video (Figma 253,162 · 1180×475) -->
+    <div class="abs case-hero vid" style="--x:253px;--y:162px">
       <video muted loop playsinline preload="auto" data-autoplay aria-hidden="true"><source src="../assets/video/orivelle.webm" type="video/webm"><source src="../assets/video/orivelle.mp4" type="video/mp4"></video>
     </div>
+    <a class="abs case-proj-link" style="--x:253px;--y:700px" href="https://www.behance.net/gallery/246016865/ORIVELLE-AI-AR-Skincare-App" target="_blank" rel="noopener">Project Link</a>
 
-    <a class="case__link" href="https://www.behance.net/gallery/246016865/ORIVELLE-AI-AR-Skincare-App" target="_blank" rel="noopener">Project Link</a>
-    <p class="case__eyebrow">AI × AR SKINCARE EXPERIENCE</p>
-    <h1 class="case__title">Orivelle</h1>
-    <p class="case__sub">Making skincare feel personal, understandable, and less overwhelming.</p>
-    <div class="tags">
-      <span class="tag" style="--dot-color:#f0644a">app design</span>
-      <span class="tag tag--plain">product design</span>
-      <span class="tag tag--plain">AI</span>
-      <span class="tag tag--plain">AR</span>
-      <span class="tag tag--plain">mobile app</span>
+    <div class="visually-hidden">
+      <h1>Orivelle</h1>
+      <p>AI × AR SKINCARE EXPERIENCE</p>
+      <p>Orivelle</p>
+      <p>app design</p>
+      <p>product design</p>
+      <p>AI</p>
+      <p>AR</p>
+      <p>mobile app</p>
+      <p>The main goal of Orivelle is to eliminate guesswork in skincare by providing a unified platform that uses AI-driven analysis and AR-based visualization to deliver personalized, accurate, and easy-to-follow skincare solutions.</p>
+      <p>Orivelle is a concept skincare app that uses AI and AR to deliver personalized analysis, real-time visualization, and smart routines—turning skincare into a simple, data-driven experience.</p>
+      <p>Process</p>
+      <p>Design</p>
+      <p>We need a solution that eliminates guesswork in skincare by helping users accurately understand their skin condition and choose the right products.</p>
+      <p>PROBLEM STATEMENT</p>
+      <p>To create an intuitive and intelligent platform that uses AI and AR to provide personalized, accurate, and easy-to-follow skincare guidance.</p>
+      <p>GOAL</p>
+      <p>SOLUTION</p>
+      <p>Orivelle is a smart skincare app that leverages AI-powered skin analysis and AR-based visualization to deliver personalized routines, real-time insights, and product recommendations.</p>
+      <p>Get your personalised skin analysis</p>
+      <p>Using Ar/Ai technology</p>
+      <p>+</p>
+      <p>1 week</p>
+      <p>3 week</p>
+      <p>5 week</p>
+      <p>Research &amp; Discovery Understanding skincare struggles and product confusion Identifying the need for personalized skincare guidance Researching AI and AR opportunities in BeautyTech</p>
+      <p>Concept &amp; Wireframing Exploring AI skin analysis interactions Brainstorming AR visualization experiences Creating low-fidelity wireframes and layout concepts</p>
+      <p>Prototyping &amp; Testing Testing usability and navigation flow Refining layouts, hierarchy, and interactions Improving accessibility and overall user experience</p>
+      <p>2 week</p>
+      <p>4 week</p>
+      <p>Experience Structuring Defining user pain points and core problems Mapping user journeys and skincare routines Structuring the app flow and feature ecosystem</p>
+      <p>Interface Design Designing the visual system and UI components Creating high-fidelity mobile screens Building immersive AI and AR interactions</p>
+      <p>Redefining skincare through intelligent technology, immersive interaction, and personalized wellness</p>
+      <p>Skin Confusion</p>
+      <p>Users often struggle with overwhelming product choices, inconsistent skincare routines, and a lack of trusted personalized guidance, making skincare feel confusing and ineffective.</p>
+      <p>AI + AR Intelligence</p>
+      <p>Orivelle combines AI-powered skin analysis with immersive AR visualization to understand individual skin concerns, deliver real-time insights, and create personalized skincare experiences.</p>
+      <p>Confident Personalized Skincare</p>
+      <p>Through intelligent recommendations, routine tracking, and progress-based insights, Orivelle helps users build healthier skincare habits, make informed decisions, and feel more confident in their skincare journey.</p>
+      <p>#1B1D24</p>
+      <p>Colours used</p>
+      <p>#E7EBEE</p>
+      <p>#799CE5</p>
+      <p>#50CDE1</p>
+      <p>#9E9FA0</p>
+      <p>#F4F5F7</p>
+      <p>#8FB7EB</p>
+      <p>#9DD5ED</p>
+      <p>AI-powered skin analysis</p>
+      <p>Smart product recommendations</p>
+      <p>Progress &amp; skin health tracking</p>
+      <p>Real-time skin insights</p>
+      <p>AR skincare visualization</p>
+      <p>Personalized skincare routines</p>
+      <p>Ab</p>
+      <p>Font used</p>
+      <p>DM Sans Bold / Semi-bold / Regular</p>
+      <p>User Interface</p>
+      <p>Oerivelle</p>
+      <p>Skin Analysis</p>
+      <p>Home Screen</p>
+      <p>AI Skin Analysis</p>
+      <p>Community</p>
+      <p>Personalized Routine System</p>
+      <p>Skin Health</p>
+      <p>AR Try-On Experience</p>
+      <p>Intelligent skincare begins with understanding the skin in real time. Orivelle’s AI-powered analysis scans skin conditions such as hydration, texture, acne, and sensitivity to deliver personalized insights and data-driven recommendations through a clean and intuitive experience.</p>
+      <p>The AR visualization feature allows users to interact with skincare products in an immersive way before making decisions. By combining real-time overlays and AI-driven insights, the experience feels futuristic, engaging, and highly personalized.</p>
+      <p>Beyond skincare tracking, Orivelle builds a collaborative wellness ecosystem where users can share experiences, discover routines, discuss skincare concerns, and learn from a trusted beauty-focused community.</p>
+      <p>Orivelle creates adaptive skincare routines tailored to individual skin needs, lifestyle, and goals. The guided step-by-step experience simplifies skincare while helping users build healthy and consistent habits through smart reminders and progress-based recommendations.</p>
+      <p>The premium ecosystem unlocks advanced AI analysis, deeper personalization, unlimited recommendations, and exclusive skincare insights, creating a more intelligent and elevated self-care experience.</p>
+      <p>Thank you</p>
     </div>
-
-    <section class="reveal">
-      <p class="case__label case__label--tldr">TL;DR</p>
-      <p>Skincare is full of information, but information doesn't always make decisions easier. Orivelle is an AI-powered skincare experience that combines personalized recommendations with AR to help users understand their skin and make more confident product choices.</p>
-      <p>I worked across <b>product strategy, UX/UI, interaction design, and visual design</b>, shaping the experience from onboarding through personalized recommendations and AR interactions.</p>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">Background</p>
-      <h2>Skincare has an information problem.</h2>
-      <p>There are more skincare products than ever, but choosing between them still means navigating ingredients, skin concerns, routines, reviews, and increasingly complex product claims.</p>
-      <p>For someone who isn't a skincare expert, personalization can quickly become another layer of complexity.</p>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">Problem</p>
-      <h2>More information doesn't mean better decisions.</h2>
-      <p>Most skincare experiences focus on what to buy.</p>
-      <div class="notif reveal"><div><b>The harder question is:</b>Why is this right for me?</div></div>
-      <p>Orivelle explores a different approach, combining AI-driven personalization with visual interaction so recommendations feel less like a product list and more like guidance.</p>
-      <div class="notif reveal"><div><b>Our North Star</b>How might we make personalized skincare easier to understand and act on?</div></div>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">Process</p>
-      <h2>Designing the experience</h2>
-      <ol class="steps">
-        <li>
-          <strong>Understanding the user first</strong>
-          <p>We structured the experience around the information needed to create a more meaningful skincare profile rather than treating every user as the same.</p>
-          <p>The goal was to make personalization feel useful without making onboarding feel like a questionnaire.</p>
-        </li>
-        <li>
-          <strong>Turning AI into something understandable</strong>
-          <p>An AI recommendation is only useful if the user understands what it means.</p>
-          <p>Instead of simply presenting a product, Orivelle connects the recommendation to the user's skin concerns and provides context around the decision.</p>
-          <p class="flow">Recommendation → Reason → Benefit → Next action</p>
-        </li>
-        <li>
-          <strong>Bringing AR into the experience</strong>
-          <p>AR wasn't introduced simply because it was technically interesting.</p>
-          <p>It became part of the experience where visualizing a product or outcome could make the decision feel more tangible.</p>
-        </li>
-      </ol>
-      <figure>
-        <img src="../assets/img/orivelle-1.png" alt="First iteration screens" width="706" height="400" loading="lazy">
-        <figcaption>first iteration</figcaption>
-      </figure>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">Final Product</p>
-      <h2>Orivelle</h2>
-      <p class="lead">Orivelle is a concept skincare app that uses AI and AR to deliver personalized analysis, real-time visualization, and smart routines—turning skincare into a simple, data-driven experience.</p>
-      <p>The <b>main goal</b> of Orivelle is to eliminate guesswork in skincare by providing a unified platform that uses AI-driven analysis and AR-based visualization <span class="muted">to deliver personalized, accurate, and easy-to-follow skincare solutions.</span></p>
-      <figure>
-        <img src="../assets/img/orivelle-2.png" alt="Final Orivelle app screens" width="718" height="2071" loading="lazy">
-      </figure>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">Reflections</p>
-      <h2>Personalization isn't about asking more questions.</h2>
-      <p>A more personalized experience doesn't necessarily need more inputs. It needs the right inputs, presented at the right moment.</p>
-      <h2>AI needs an interface.</h2>
-      <p>The intelligence of an AI product is only one part of the experience. The interface has to translate that intelligence into something people can understand and act on.</p>
-      <figure>
-        <img src="../assets/img/orivelle-3.png" alt="Orivelle brand image" width="695" height="400" loading="lazy">
-      </figure>
-    </section>
-  </main>
   </div>
 
   <script src="../js/site.js"></script>

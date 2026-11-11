@@ -7,139 +7,58 @@
   <link rel="icon" href="../assets/img/logo-star.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Pixelify+Sans&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="case-page" data-page="works" data-case="darshana" data-root="../">
+<body class="case-page case-page--dark" style="--case-bg:#000000" data-page="works" data-case="darshana" data-root="../">
   <div class="progress"></div>
-  <!-- BACK stays pinned in place (Figma x130, y370) while the page scrolls -->
+  <!-- BACK stays pinned in place (Figma x58, y374) while the page scrolls -->
   <a class="case-back" href="../index.html#works" data-back>BACK</a>
 
-  <div class="frame case-frame">
-    <header data-site-header data-minimal></header>
+  <!-- Figma frame "Darshana 2" (1680 × 5702). The design itself is the image
+       slices in assets/case/darshana/ — re-export them from Figma to change it.
+       Live parts sit on top at their Figma x/y. -->
+  <div class="frame case-head"><header data-site-header data-minimal></header></div>
+  <div class="frame case-board" style="--fh:5702px">
+    <div class="case-board__img">
+      <img src="../assets/case/darshana/01.webp" alt="" width="1680" height="1200" decoding="async">
+      <img src="../assets/case/darshana/02.webp" alt="" width="1680" height="1200" decoding="async">
+      <img src="../assets/case/darshana/03.webp" alt="" width="1680" height="1200" loading="lazy" decoding="async">
+      <img src="../assets/case/darshana/04.webp" alt="" width="1680" height="1200" loading="lazy" decoding="async">
+      <img src="../assets/case/darshana/05.webp" alt="" width="1680" height="902" loading="lazy" decoding="async">
+    </div>
 
-  <main class="case">
-
-    <div class="case__hero vid">
-      <img src="../assets/img/darshana-work.png" alt="Darshana cover" width="681" height="382">
+    <!-- hero video (Figma 253,162 · 1180×475) -->
+    <div class="abs case-hero vid" style="--x:253px;--y:162px">
       <video muted loop playsinline preload="auto" data-autoplay aria-hidden="true"><source src="../assets/video/darshana.webm" type="video/webm"><source src="../assets/video/darshana.mp4" type="video/mp4"></video>
     </div>
+    <a class="abs case-proj-link" style="--x:253px;--y:700px" href="https://www.behance.net/gallery/231425081/Darshana" target="_blank" rel="noopener">Project Link</a>
 
-    <a class="case__link" href="https://www.behance.net/gallery/231425081/Darshana" target="_blank" rel="noopener">Project Link</a>
-    <p class="case__eyebrow">DIGITAL ARCHIVE × WEB DESIGN</p>
-    <h1 class="case__title">Darshana</h1>
-    <!-- NOTE: this subtitle is the same as Drip Theory's in the Figma file — you may want to change it -->
-    <p class="case__sub">Turning coffee culture into an immersive digital experience.</p>
-    <div class="tags">
-      <span class="tag" style="--dot-color:#f0644a">web design</span>
-      <span class="tag tag--plain">UI/UX</span>
-      <span class="tag tag--plain">digital archive</span>
-      <span class="tag tag--plain">cultural experience</span>
+    <div class="visually-hidden">
+      <h1>Darshana</h1>
+      <p>DIGITAL ARCHIVE × WEB DESIGN</p>
+      <p>Darshana</p>
+      <p>web design</p>
+      <p>UI/UX</p>
+      <p>digital archive</p>
+      <p>cultural experience</p>
+      <p>Shaped for influence</p>
+      <p>Darshana is a conceptual digital archival platform designed to preserve, showcase, and democratize access to Indian art across centuries. From ancient miniature paintings to 20th-century modernism, Darshana bridges the gap between physical galleries and digital storytelling, offering a seamless interface where users can explore India’s visual heritage.</p>
+      <p>Design Identity</p>
+      <p>The primary color palette of this digital museum experience is a harmonious blend of white and black a timeless contrast that reflects clarity, sophistication, and minimalism. This monochromatic scheme provides a neutral stage, allowing the art to take center spotlight while evoking a quiet sense of contemplation, much like the calm of a physical gallery space.</p>
+      <p>Together, the monochrome palette and thoughtful typography transform the website into a digital sanctuary for art. The contrast of black and white provides clarity and focus, while Instrument Serif adds classic refinement and Manrope ensures modern legibility. This pairing creates a space where design and storytelling coexist seamlessly inviting users to not just view, but experience each artwork within a curated, immersive atmosphere.</p>
+      <p>The use of white conveys purity and openness, expanding the visual space and guiding the viewer’s attention to the artwork itself. In contrast, black anchors the layout, lending depth and a refined elegance that resonates with the seriousness of curation and the gravity of historical archives.</p>
+      <p>Typography plays a pivotal role in shaping the digital atmosphere. Instrument Serif, used for headings, brings a sense of classic refinement reminiscent of printed catalogues and engraved museum plaques while Manrope, a clean and modern sans-serif typeface, ensures legibility and accessibility across digital interfaces.</p>
+      <p>Colour Palette</p>
+      <p>Typography</p>
+      <p>Fonts</p>
+      <p>Manrope</p>
+      <p>Instrument Serif</p>
+      <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+      <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+      <p>Paintings ( Collections )</p>
+      <p>Thank You ( धन्यवाद )</p>
     </div>
-
-    <section class="reveal">
-      <p class="case__label case__label--tldr">TL;DR</p>
-      <p>Darshana is a digital art archive designed to make Indian art easier to <b>discover, explore, and understand online.</b></p>
-      <p>The project focuses on transforming a large amount of cultural information into an engaging web experience through editorial layouts, visual hierarchy, intuitive navigation, and contextual storytelling.</p>
-      <p>I worked across the information architecture, UX, visual design, interaction design, and web experience.</p>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">Background</p>
-      <h2>An archive shouldn't feel like a database.</h2>
-      <p>Indian art carries layers of history, culture, artists, movements, mediums, and stories.</p>
-      <p>But presenting all of that information digitally can easily result in dense interfaces that prioritize categorization over discovery.</p>
-      <p>Darshana explores a different approach.</p>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">Problem</p>
-      <h2>How do you make an archive feel alive?</h2>
-      <p>A user shouldn't need to know the name of an artist or movement before they can start exploring.</p>
-      <p>The website needed to support both:</p>
-      <p><b style="font-weight:600">Intentional search</b> — I know what I'm looking for.</p>
-      <p><b style="font-weight:600">Serendipitous discovery</b> — I want to see what I find.</p>
-      <div class="notif reveal"><div><b>Our North Star</b>How might we make Indian art easier to discover without losing the context behind it?</div></div>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">Process</p>
-      <h2>Designing the experience</h2>
-      <ol class="steps">
-        <li>
-          <strong>Designing for exploration</strong>
-          <p>The homepage was designed as an entry point into discovery rather than simply a directory.</p>
-          <p>Visual content creates multiple paths into the archive.</p>
-        </li>
-        <li>
-          <strong>Creating an editorial hierarchy</strong>
-          <p>Artwork remains the primary visual element.</p>
-          <p>Typography and layout provide context without competing with the work itself.</p>
-          <p>The visual language combines Instrument Serif and Manrope to create a balance between editorial character and digital clarity.</p>
-        </li>
-        <li>
-          <strong>Connecting artwork and context</strong>
-          <p>An artwork becomes more meaningful when users can understand the context around it.</p>
-          <p>The experience connects:</p>
-          <p><b>Artwork → Artist → Movement → Period → Medium → Context</b></p>
-          <p>This allows users to move between individual pieces and the larger archive.</p>
-        </li>
-        <li>
-          <strong>Making discovery feel effortless</strong>
-          <p>Filters, categories, navigation, and content hierarchy are designed to support exploration without making the experience feel like a research database.</p>
-        </li>
-      </ol>
-      <figure>
-        <img src="../assets/img/darshana-1.png" alt="Darshana design identity: colours and typography" width="703" height="648" loading="lazy">
-        <figcaption>design identity</figcaption>
-      </figure>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">Final Product</p>
-      <h2>Darshana</h2>
-      <p class="lead">01&nbsp;&nbsp;Discover</p>
-      <p>A visually-led homepage introduces users to the archive and encourages exploration.</p>
-      <p>&nbsp;</p>
-      <p class="lead">02&nbsp;&nbsp;Explore the archive</p>
-      <p>Users can browse artworks through categories, movements, periods, and other contextual relationships.</p>
-      <p>&nbsp;</p>
-      <p class="lead">03&nbsp;&nbsp;Artwork detail</p>
-      <p>The artwork takes center stage while supporting information gives users the context needed to understand it.</p>
-      <p>&nbsp;</p>
-      <p class="lead">04&nbsp;&nbsp;Artist experience</p>
-      <p>Artist pages connect individual works to the people and practices behind them.</p>
-      <p>&nbsp;</p>
-      <p class="lead">05&nbsp;&nbsp;Connected discovery</p>
-      <p>Instead of ending at one artwork, the experience creates pathways to related artists, movements, and works.</p>
-      <figure>
-        <img src="../assets/img/darshana-2.png" alt="Darshana website screens" width="701" height="1182" loading="lazy">
-      </figure>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">The Visual Language</p>
-      <h2>Editorial, but not archival.</h2>
-      <p>The combination of Instrument Serif + Manrope creates a contrast between cultural/editorial expression and contemporary digital usability.</p>
-      <p>Large imagery, generous whitespace, restrained UI elements, and strong typography keep the artwork at the center of the experience.</p>
-    </section>
-
-    <section class="reveal">
-      <p class="case__label">Reflections</p>
-      <h2>Discovery needs multiple entry points.</h2>
-      <p>One of the biggest design considerations was allowing users to enter the archive from different directions.</p>
-      <p>Someone might begin with an artist.</p>
-      <p>Someone else might begin with a movement.</p>
-      <p>Another person might simply discover an artwork visually.</p>
-      <p>A good archive should accommodate all three.</p>
-      <h2>The interface should know when to disappear.</h2>
-      <p>When the content is visually rich, the designer's job isn't always to add more.</p>
-      <p>Sometimes the strongest design decision is giving the content enough space to speak for itself.</p>
-      <figure>
-        <img src="../assets/img/darshana-3.png" alt="Darshana painting" width="707" height="355" loading="lazy">
-      </figure>
-    </section>
-  </main>
   </div>
 
   <script src="../js/site.js"></script>

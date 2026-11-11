@@ -8,7 +8,7 @@
   <link rel="icon" href="assets/img/logo-star.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Pixelify+Sans&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Inter:wght@400;600;700&family=Silkscreen&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Pixelify+Sans&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-page="home">
@@ -21,7 +21,7 @@
     <header data-site-header></header>
 
     <div class="abs landing__player" data-tilt>
-      <img src="assets/img/hero-player.png" alt="Translucent music player with a Tune Track receipt" width="548" height="725">
+      <img src="assets/img/hero-player.png" alt="Translucent music player with a Design Track receipt" width="548" height="725">
     </div>
 
     <p class="abs landing__eyebrow">ILISHA DABAS</p>
@@ -33,71 +33,156 @@
   </main>
 
   <!-- =====================================================
-       WORKS — Figma frame "Work" (cards at x200 / x851)
-       Each project is one <a class="card">.
+       WORKS — Figma frames "Work - 1 / 2 / 3"
+       The tabs show one category at a time: each card's
+       data-cat must match a tab's data-cat.
        Tag dot colour: style="--dot-color: #hex"
        ===================================================== -->
   <section class="frame works" id="works" aria-label="Works">
-    <div class="work-grid">
+    <div class="abs seg" role="tablist" aria-label="Work categories">
+      <button class="seg__btn" role="tab" data-cat="uiux" aria-selected="true">UI/UX Design</button>
+      <button class="seg__btn" role="tab" data-cat="product" aria-selected="false">Product Design</button>
+      <button class="seg__btn" role="tab" data-cat="identity" aria-selected="false">Visual Identity</button>
+    </div>
 
-      <a class="card reveal" href="work/orivelle.html" data-hover-video>
+    <div class="work-grid">
+      <!-- UI/UX Design -->
+      <a class="card reveal" href="work/orivelle.html" data-cat="uiux" data-hover-video>
         <div class="card__media"><img src="assets/img/orivelle-work.jpg" alt="Orivelle" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/orivelle.webm" type="video/webm"><source src="assets/video/orivelle.mp4" type="video/mp4"></video></div>
         <img class="card__badge" src="assets/img/logo-star.png" alt="">
         <h2 class="card__title">Orivelle<span class="card__arrow">→</span></h2>
         <span class="tag" style="--dot-color:#f0644a">app design</span>
       </a>
-
-      <a class="card reveal" href="work/anemos.html" data-hover-video>
-        <div class="card__media"><img src="assets/img/anemos-work.png" alt="Anemos" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/anemos.webm" type="video/webm"><source src="assets/video/anemos.mp4" type="video/mp4"></video></div>
-        <img class="card__badge" src="assets/img/logo-star.png" alt="">
-        <h2 class="card__title">Anemos<span class="card__arrow">→</span></h2>
-        <span class="tag" style="--dot-color:#3fbf9a">Automobile design</span>
-      </a>
-
-      <a class="card reveal" href="work/moshi.html" data-hover-video>
-        <div class="card__media"><img src="assets/img/moshi-work.png" alt="Moshi" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/moshi.webm" type="video/webm"><source src="assets/video/moshi.mp4" type="video/mp4"></video></div>
-        <img class="card__badge" src="assets/img/logo-star.png" alt="">
-        <h2 class="card__title">Moshi<span class="card__arrow">→</span></h2>
-        <span class="tag" style="--dot-color:#f2a52b">robotic design</span>
-      </a>
-
-      <a class="card reveal" href="work/team-inferno.html" data-hover-video>
-        <div class="card__media"><img src="assets/img/inferno-work.png" alt="Team Inferno" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/inferno.webm" type="video/webm"><source src="assets/video/inferno.mp4" type="video/mp4"></video></div>
-        <img class="card__badge card__badge--wide" src="assets/img/inferno-1-2.png" alt="">
-        <h2 class="card__title">Inferno Redesign<span class="card__arrow">→</span></h2>
-        <span class="tag" style="--dot-color:#9b93f4">brand identity</span>
-      </a>
-
-      <a class="card reveal" href="work/atm-interface.html" data-hover-video>
+      <a class="card reveal" href="work/atm-interface.html" data-cat="uiux" data-hover-video>
         <div class="card__media"><img src="assets/img/atm-work.png" alt="ATM interface" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/atm.webm" type="video/webm"><source src="assets/video/atm.mp4" type="video/mp4"></video></div>
         <img class="card__badge" src="assets/img/logo-star.png" alt="">
         <h2 class="card__title">ATM interface<span class="card__arrow">→</span></h2>
         <span class="tag" style="--dot-color:#56c3e0">interaction design</span>
       </a>
-
-      <a class="card reveal" href="work/wubba.html" data-hover-video>
-        <div class="card__media"><img src="assets/img/wubba-work.png" alt="Wubba" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/wubba.webm" type="video/webm"><source src="assets/video/wubba.mp4" type="video/mp4"></video></div>
-        <img class="card__badge" src="assets/img/logo-star.png" alt="">
-        <h2 class="card__title">Wubba<span class="card__arrow">→</span></h2>
-        <span class="tag" style="--dot-color:#9b93f4">brand identity</span>
-      </a>
-
-      <a class="card reveal" href="work/drip-theory.html" data-hover-video>
-        <div class="card__media"><img src="assets/img/drip-theory-work.png" alt="The Drip Theory" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/drip-theory.webm" type="video/webm"><source src="assets/video/drip-theory.mp4" type="video/mp4"></video></div>
+      <a class="card reveal" href="work/drip-theory.html" data-cat="uiux" data-hover-video>
+        <div class="card__media"><img src="assets/img/drip-theory-work.png" alt="Drip Theory" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/drip-theory.webm" type="video/webm"><source src="assets/video/drip-theory.mp4" type="video/mp4"></video></div>
         <img class="card__badge" src="assets/img/logo-star.png" alt="">
         <h2 class="card__title">Drip Theory<span class="card__arrow">→</span></h2>
         <span class="tag" style="--dot-color:#f0644a">web design</span>
       </a>
-
-      <a class="card reveal" href="work/darshana.html" data-hover-video>
+      <a class="card reveal" href="work/darshana.html" data-cat="uiux" data-hover-video>
         <div class="card__media"><img src="assets/img/darshana-work.png" alt="Darshana" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/darshana.webm" type="video/webm"><source src="assets/video/darshana.mp4" type="video/mp4"></video></div>
         <img class="card__badge" src="assets/img/logo-star.png" alt="">
         <h2 class="card__title">Darshana<span class="card__arrow">→</span></h2>
         <span class="tag" style="--dot-color:#f0644a">web design</span>
       </a>
 
+      <!-- Product Design -->
+      <a class="card reveal" href="work/anemos.html" data-cat="product" data-hover-video>
+        <div class="card__media"><img src="assets/img/anemos-work.png" alt="Anemos" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/anemos.webm" type="video/webm"><source src="assets/video/anemos.mp4" type="video/mp4"></video></div>
+        <img class="card__badge" src="assets/img/logo-star.png" alt="">
+        <h2 class="card__title">Anemos<span class="card__arrow">→</span></h2>
+        <span class="tag" style="--dot-color:#3fbf9a">Automobile design</span>
+      </a>
+      <a class="card reveal" href="work/moshi.html" data-cat="product" data-hover-video>
+        <div class="card__media"><img src="assets/img/moshi-work.png" alt="Moshi" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/moshi.webm" type="video/webm"><source src="assets/video/moshi.mp4" type="video/mp4"></video></div>
+        <img class="card__badge" src="assets/img/logo-star.png" alt="">
+        <h2 class="card__title">Moshi<span class="card__arrow">→</span></h2>
+        <span class="tag" style="--dot-color:#f2a52b">robotic design</span>
+      </a>
+
+      <!-- Visual Identity -->
+      <a class="card reveal" href="work/team-inferno.html" data-cat="identity" data-hover-video>
+        <div class="card__media"><img src="assets/img/inferno-work.png" alt="Inferno Redesign" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/inferno.webm" type="video/webm"><source src="assets/video/inferno.mp4" type="video/mp4"></video></div>
+        <img class="card__badge card__badge--wide" src="assets/img/inferno-1-2.png" alt="">
+        <h2 class="card__title">Inferno Redesign<span class="card__arrow">→</span></h2>
+        <span class="tag" style="--dot-color:#9b93f4">brand identity</span>
+      </a>
+      <a class="card reveal" href="work/wubba.html" data-cat="identity" data-hover-video>
+        <div class="card__media"><img src="assets/img/wubba-work.png" alt="Wubba" width="607" height="344" loading="lazy"><video muted loop playsinline preload="metadata" aria-hidden="true"><source src="assets/video/wubba.webm" type="video/webm"><source src="assets/video/wubba.mp4" type="video/mp4"></video></div>
+        <img class="card__badge" src="assets/img/logo-star.png" alt="">
+        <h2 class="card__title">Wubba<span class="card__arrow">→</span></h2>
+        <span class="tag" style="--dot-color:#9b93f4">brand identity</span>
+      </a>
     </div>
   </section>
+
+  <!-- =====================================================
+       ABOUT ME — Figma frame "Profile 2" (1680 × 1140)
+       ===================================================== -->
+  <section class="frame about" id="about" aria-label="About me">
+    <img class="abs sparkle about__sparkle-a" src="assets/img/sparkle.png" alt="">
+    <img class="abs about__chibi" src="assets/img/chibi-profile.png" alt="Pixel-art Ilisha holding an iced coffee" width="258" height="579" loading="lazy">
+    <img class="abs sparkle about__sparkle-b" src="assets/img/sparkle.png" alt="">
+
+    <h2 class="abs about__title">About me</h2>
+    <div class="abs about__bio">
+      <p>I’m Ilisha, a product designer, builder, and occasional overthinker.</p>
+      <p>I study Design at DTU and work across products, brands and robotics with Team Inferno. I care about the messy part before the final screen: asking better questions and getting people moving in the same direction.</p>
+    </div>
+
+    <!-- each folder opens the popup with the matching id -->
+    <div class="about__folders">
+      <button class="abs folder folder--experience" data-open="experience"><img src="assets/img/no-file.png" alt=""><span>EXPERIENCE</span></button>
+      <button class="abs folder folder--skills" data-open="skills"><img src="assets/img/no-file.png" alt=""><span>SKILLS</span></button>
+    </div>
+
+    <!-- Trophy shelf (Figma 1236 wide, centred, y798) -->
+    <div class="abs trophy reveal">
+      <p class="trophy__head">★ TROPHY SHELF</p>
+      <div class="trophy__stats">
+        <div class="stat"><b>#7</b><strong>World · ISDC 2025</strong><span>International Space Drone<br>Challenge</span></div>
+        <div class="stat"><b>1st</b><strong>Project Mgmt · IRC 2025</strong><span>International Rover Challenge · World rank #12</span></div>
+        <div class="stat"><b class="stat__word">Highest</b><strong><small>Scorer Business Planning</small> . IRC 2026</strong><span>International Rover Challenge</span></div>
+        <div class="stat"><b>#19</b><strong>World · IRC 2026</strong><span>International Rover Challenge</span></div>
+        <div class="stat"><b>ERC</b><strong>European Rover Challenge</strong><span>One of few Indian Teams<br>qualified</span></div>
+        <div class="stat"><b>13k+</b><strong>Registrations</strong><span>SEVA FIRST identity + site<br>(<a href="https://sewafirstryic.dtu.ac.in/" target="_blank" rel="noopener">mention on official site</a>)</span></div>
+      </div>
+    </div>
+
+    <p class="abs about__fueled">FUELED BY CAFFEINE ( ◡̀_◡́)ᕤ</p>
+  </section>
+
+  <!-- ================= EXPERIENCE popup (Figma "experience") ================= -->
+  <dialog class="window window--split" id="experience" aria-label="Experience">
+    <div class="window__bar">
+      <div class="window__dots"><button class="window__close" aria-label="Close"></button><span></span><span></span></div>
+      <div class="window__title">Experience</div>
+    </div>
+    <div class="split">
+      <div class="split__art split__art--desk"><img src="assets/img/pop-experience.png" alt="Pixel-art Ilisha working at her desk" width="424" height="424"></div>
+      <div class="roles">
+        <p class="pop-label">WHERE I'VE WORKED</p>
+        <div class="role"><span class="role__logo">NB</span><div><h3>Founder &amp; Product Designer · NaviBites</h3><p>Designed an AI food-discovery app end-to-end, with a <b>Figma design system</b> for dev handoff.</p></div></div>
+        <div class="role"><span class="role__logo">Do</span><div><h3>Head Designer · Dolu</h3><p>Led <b>30+ screens</b> across app, website and WhatsApp ordering for milk subscriptions.</p></div></div>
+        <div class="role"><span class="role__logo">TI</span><div><h3>Design &amp; Research Lead · Team Inferno, DTU Mars Rover</h3><p>Led design in a <b>40+ member</b> team; built an operator portal with 4 live camera feeds.</p></div></div>
+        <div class="role"><span class="role__logo">SF</span><div><h3>Visual Identity &amp; Web Designer · SEVA FIRST</h3><p>Logo, 20+ web pages and collateral for an event with <b>13,000+ registrations</b>.</p></div></div>
+        <div class="role"><span class="role__logo">Ag</span><div><h3>UX Research Intern · Agnivira (ISRO InSTEM)</h3><p>Turned <b>8 interviews + 5 competitor studies</b> into one design direction.</p></div></div>
+        <div class="role"><span class="role__logo">Tc</span><div><h3>Brand Identity &amp; Design Intern · Technical Craftsmen (Saudi Arabia)</h3><p>Developed <b>2 brand identities</b> and digital experiences for international clients; designed a fully operational Saudi café .</p></div></div>
+        <div class="role"><span class="role__logo">Pa</span><div><h3>Lead Product Designer · Panha (NGO under DTU IIF)</h3><p>Led <b>end-to-end branding</b> and <b>product design</b>, including the logo, website and multiple startup pitch decks.</p></div></div>
+        <div class="role"><span class="role__logo">Fr</span><div><h3>Freelance UX &amp; Visual Designer</h3><p>Delivered UI/UX, branding and digital design solutions for <b>10+ startup and international clients</b> across diverse industries.</p></div></div>
+        <a class="roles__more" href="assets/Ilisha-Dabas-Resume.pdf" target="_blank" rel="noopener">Full details in resume →</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ================= SKILLS popup (Figma "skills") ================= -->
+  <dialog class="window window--split" id="skills" aria-label="Skills">
+    <div class="window__bar">
+      <div class="window__dots"><button class="window__close" aria-label="Close"></button><span></span><span></span></div>
+      <div class="window__title">Skills</div>
+    </div>
+    <div class="split">
+      <div class="split__art"><img src="assets/img/pop-skills.png" alt="Pixel-art Ilisha surrounded by design tool icons" width="408" height="396"></div>
+      <div class="skillset">
+        <div><p class="pop-label">DESIGN</p><ul class="chips chips--design">
+          <li>Product Design</li><li>UX Research</li><li>Interaction Design</li><li>Information Architecture</li><li>Prototyping</li><li>Usability Testing</li><li>Design Systems</li><li>Visual Identity</li><li>Typography</li><li>Motion</li><li>User Research</li><li>User Flows</li><li>Wireframing</li><li>Accessibility</li><li>Design Strategy</li><li>Service Design</li><li>Responsive Design</li>
+        </ul></div>
+        <div><p class="pop-label">TOOLS</p><ul class="chips">
+          <li>Figma</li><li>Framer</li><li>Illustrator</li><li>Photoshop</li><li>After Effects</li><li>Premiere Pro</li><li>Blender</li><li>Fusion 360</li><li>SolidWorks</li><li>Claude</li><li>Cursor</li><li>Lovable</li><li>Spline</li><li>Google Stitch</li><li>DaVinci Resolve</li><li>GitHub</li>
+        </ul></div>
+        <div><p class="pop-label">BUILD</p><ul class="chips">
+          <li>HTML/CSS</li><li>CAD + 3D modelling</li><li>Developer handoff</li><li>Rapid AI prototyping</li><li>AI-assisted Development</li><li>Functional Prototyping</li><li>Physical Computing</li>
+        </ul></div>
+        <p class="skillset__note"><b>Also hands-on with fabrication</b>: Welding, CNC machining, laser cutting, 3D printing, lathe operations, soldering and electronics prototyping.</p>
+      </div>
+    </div>
+  </dialog>
 
   <nav data-dock></nav>
 
@@ -105,6 +190,30 @@
   <script src="js/music.js"></script>
   <script src="js/media.js"></script>
   <script>
+    // WORKS tabs: show the cards whose data-cat matches the chosen tab
+    (function () {
+      const section = document.getElementById("works");
+      const tabs = [...document.querySelectorAll(".seg__btn")];
+      const cards = [...section.querySelectorAll(".card")];
+      const choose = (cat, remember = true) => {
+        tabs.forEach((t) => t.setAttribute("aria-selected", t.dataset.cat === cat));
+        let n = 0;
+        cards.forEach((c) => { const on = c.dataset.cat === cat; c.hidden = !on; if (on) { n++; c.classList.add("is-visible"); } });
+        section.style.setProperty("--rows", Math.ceil(n / 2));
+        if (remember) try { sessionStorage.setItem("works-tab", cat); } catch (e) {}
+      };
+      tabs.forEach((t) => t.addEventListener("click", () => choose(t.dataset.cat)));
+      let start = "uiux";
+      try {
+        start = sessionStorage.getItem("works-tab") || start;
+        // coming back from a case study: open the tab that holds its card
+        const back = sessionStorage.getItem("works-card");
+        const card = back && sessionStorage.getItem("returning") === "1" && section.querySelector(`.card[href="${back}"]`);
+        if (card) start = card.dataset.cat;
+      } catch (e) {}
+      choose(start, false);
+    })();
+
     // letters of "intuitive" bounce on hover
     document.querySelectorAll("[data-split]").forEach((el) => {
       el.innerHTML = [...el.textContent].map((c) => `<span>${c}</span>`).join("");

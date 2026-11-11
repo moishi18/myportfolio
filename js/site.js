@@ -8,11 +8,11 @@ const SITE = {
     { label: "EMAIL",    href: "mailto:ilishadabas@gmail.com" },
     { label: "RESUME",   href: "assets/Ilisha-Dabas-Resume.pdf" },
   ],
-  // works = scrolls down the homepage; projects & profile are their own pages
+  // works + about me = sections of the homepage; archive = projects page
   dock: [
     { id: "works",    label: "works",    href: "index.html#works", icon: "assets/img/icon-works.png" },
-    { id: "projects", label: "projects", href: "projects.html",    icon: "assets/img/icon-projects.png" },
-    { id: "profile",  label: "profile",  href: "profile.html",     icon: "assets/img/icon-profile.png" },
+    { id: "projects", label: "archive",  href: "projects.html",    icon: "assets/img/icon-projects.png" },
+    { id: "about",    label: "about me", href: "index.html#about", icon: "assets/img/icon-profile.png" },
   ],
 };
 
@@ -31,6 +31,8 @@ const SITE = {
     const w = document.documentElement.clientWidth;
     const s = w <= 760 ? 1 : Math.min(w, 1920) / 1680;
     document.documentElement.style.setProperty("--s", s.toFixed(4));
+    // case-study boards keep their Figma layout on phones too
+    document.documentElement.style.setProperty("--sb", (w / 1680).toFixed(4));
   };
   setScale();
   addEventListener("resize", setScale);
@@ -66,17 +68,20 @@ const SITE = {
     const onHome = page === "home";
     dock.innerHTML = SITE.dock
       .map((d) => `
-        <a class="dock__item dock__item--${d.id}" data-id="${d.id}" href="${onHome && d.id === "works" ? "#works" : fix(d.href)}"${d.id === page ? ' aria-current="page"' : ""}>
+        <a class="dock__item dock__item--${d.id}" data-id="${d.id}" href="${onHome && d.href.startsWith("index.html#") ? d.href.slice(10) : fix(d.href)}"${d.id === page ? ' aria-current="page"' : ""}>
           <img src="${fix(d.icon)}" alt="">
           <span>${d.label}</span>
         </a>`)
       .join("");
 
-    // on the homepage, "works" lights up once you scroll down to the work
+    // on the homepage, "works" / "about me" light up as you scroll to them
     if (onHome) {
-      const works = document.getElementById("works");
-      const item = dock.querySelector('[data-id="works"]');
-      const update = () => item.toggleAttribute("aria-current", works.getBoundingClientRect().top < innerHeight * 0.5);
+      const sections = ["works", "about"].map((id) => [document.getElementById(id), dock.querySelector(`[data-id="${id}"]`)]);
+      const update = () => {
+        let current = null;
+        sections.forEach(([sec]) => { if (sec && sec.getBoundingClientRect().top < innerHeight * 0.5) current = sec; });
+        sections.forEach(([sec, item]) => item && item.toggleAttribute("aria-current", sec === current));
+      };
       addEventListener("scroll", update, { passive: true });
       update();
     }
